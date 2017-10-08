@@ -46,7 +46,6 @@ public class CallbackController {
         try {
             Tokens tokens = controller.handle(req);
             TokenAuthentication tokenAuth = new TokenAuthentication(JWT.decode(tokens.getIdToken()));
-            // https://dudley.us.webtask.io/adf6e2f2b84784b57522e3b19dfc9201/api/users/40e3d42e-dfb2-4192-8213-7bfa561b63c0/roles
             SecurityContextHolder.getContext().setAuthentication(tokenAuth);
             res.sendRedirect(redirectOnSuccess);
         } catch (AuthenticationException | IdentityVerificationException e) {
