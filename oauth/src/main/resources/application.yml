@@ -1,0 +1,15 @@
+auth:
+  domain: dudley.auth0.com
+  client_id: RvIutYPWApWwIy3hIEip6ETczo2Z4XAZ
+  client_secret: pB6Kf2iFKrtq564ZeZ0BCGTCsT9pTKmNACMKjobJEZfVajLM8hATbuCSvl8b4yqH
+
+server:
+  port: 8082
+
+logging:
+  level:
+    org:
+      springframework:
+        security: INFO
+        web: INFO
+        boot: INFO
